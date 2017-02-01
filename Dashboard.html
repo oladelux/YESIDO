@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YESIDO - Nigeria's First Wedding Planner</title>
+    <meta name="description" content="We help organize and plan that special day of yours">
+    <link rel="icon" type="image/png" href="images/FAVICON.png">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="topbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="padding-top: 0;padding-bottom: 0;">
+                    <img alt="Brand" src="images/looo.png">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right main-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">VENDORS</a></li>
+                    <li><a href="#">FEATURED COUPLE</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="contact.php">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section style="background:#efefe9;">
+            <div class="container">
+                <div class="row">
+                    <div class="main">
+                        <div class="main-inner">
+                            <ul class="nav nav-tabs" id="userboard">
+                                <div class="line"></div>
+                                <li class="active">
+                                    <a href="#dashboard" data-toggle="tab" title="Dashboard">
+                                      <span class="small_circle one">
+                                          <i class="glyphicon glyphicon-home"></i>
+                                      </span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#iv" data-toggle="tab" title="Wedding Website">
+                                        <span class="small_circle two">
+                                            <i class="glyphicon glyphicon-file"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#favourites" data-toggle="tab" title="Favourite Vendors">
+                                         <span class="small_circle three">
+                                              <i class="glyphicon glyphicon-heart"></i>
+                                         </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#activities" data-toggle="tab" title="Activities">
+                                         <span class="small_circle four">
+                                              <i class="glyphicon glyphicon-signal"></i>
+                                         </span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#settings" data-toggle="tab" title="Account Settings">
+                                        <span class="small_circle five">
+                                          <i class="glyphicon glyphicon-user"></i>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#help" data-toggle="tab" title="Help">
+                                        <span class="small_circle six">
+                                            <i class="glyphicon glyphicon-question-sign"></i>
+                                        </span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="dashboard">
+                                <div class="welcome">
+                                   <h3> <img class="img-circle" src="images/prof.jpg" style="width: 15%;"> Welcome Back! $Username</h3>
+                                    <p>
+                                        <?php
+                                            print_r date("Y");
+                                        ?>
+                                    </p>
+                                </div>
+                                <div class="content">
+                                    <h4>WEDDING LOCATION NAVIGATION</h4>
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div id="floating-panel">
+                                                <b>Start: </b>
+                                                <select id="start">
+                                                    <option value="Ikeja">Ikeja</option>
+                                                    <option value="Ikorodu">Ikorodu</option>
+                                                    <option value="Epe">Epe</option>
+                                                    <option value="Badagry">Badagry</option>
+                                                    <option value="Surulere">Surulere</option>
+                                                    <option value="Apapa">Apapa</option>
+                                                    <option value="Somolu">Somolu</option>
+                                                    <option value="Yaba">Yaba</option>
+                                                    <option value="Akowonjo">Akowonjo</option>
+                                                    <option value="Ojo">Ojo</option>
+                                                    <option value="Kosofe">Kosofe</option>
+                                                    <option value="Ebute Metta">Ebute Metta</option>
+                                                </select>
+                                                <b>End: </b>
+                                                <select id="end">
+                                                    <option value="Ikoyi">Ikoyi</option>
+                                                    <option value="Lagos Island">Lagos Island</option>
+                                                    <option value="Victoria Island">Victoria Island</option>
+                                                    <option value="Agege">Agege</option>
+                                                    <option value="Ikeja">Ikeja</option>
+                                                    <option value="Maryland">Maryland</option>
+                                                    <option value="Oshodi">Oshodi</option>
+                                                    <option value="Yaba">Yaba</option>
+                                                    <option value="Ojota">Ojota</option>
+                                                    <option value="Egbeda">Egbeda</option>
+                                                    <option value="Kosofe">Kosofe</option>
+                                                    <option value="Ebute Metta">Ebute Metta</option>
+                                                </select>
+                                            </div>
+                                            <div id="map"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="iv">
+
+
+                            </div>
+                            <div class="tab-pane fade" id="favourites">
+
+                            </div>
+                            <div class="tab-pane fade" id="activities">
+
+                            </div>
+                            <div class="tab-pane fade" id="settings">
+
+                            </div>
+                            <div class="tab-pane fade" id="help">
+
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 footerleft ">
+                        <div class="logofooter"> <img src="images/looo.png"> </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                        <p><i class="fa fa-map-pin"></i> 10 Alara Street, Yaba. Lagos State. Nigeria</p>
+                        <p><i class="fa fa-phone"></i> Phone (Nigeria) : +2348109948198</p>
+                        <p><i class="fa fa-envelope"></i> E-mail : oladele@switch.ng</p>
+
+                    </div>
+                    <div class="col-md-2 col-sm-6 paddingtop-bottom">
+                        <h6 class="heading7">GENERAL LINKS</h6>
+                        <ul class="footer-ul">
+                            <li><a href="#"> Vendors</a></li>
+                            <li><a href="#"> Privacy Policy</a></li>
+                            <li><a href="#"> Terms & Conditions</a></li>
+                            <li><a href="#"> Featured Couple</a></li>
+                            <li><a href="#"> Frequently Ask Questions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                        <h6 class="heading7">VENDORS</h6>
+                        <div class="post">
+                            <p>DJ's</p>
+                            <p>MC's</p>
+                            <p>Wedding Cakes</p>
+                            <p>Wedding Gifts</p>
+                            <p>Wedding Planners</p>
+                            <p>Wedding Jewelries</p>
+                            <p>Wedding Dresses</p>
+                            <p>Hairstylist</p>
+                            <p>Videographers</p>
+                            <p>Caterers</p>
+                            <p>Photographers</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                        <div class="connect">
+                            <h4 class="text-center" style="font-weight: bold; color:white; padding-top: 2%; padding-bottom: 2%">CONNECT WITH US <br> <span> <img src="images/fb.png">  <img src="images/IG.png">  <img src="images/tw.png"></span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer start from here-->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="col-md-6">
+                    <p>© 2017 - All Rights with YESIDO</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="bottom_ul">
+                        <li><a href="#">YesIdo.ng</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Faq's</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/dashboard.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDMOp1QYOePCL4zsxFKkNCM3mF7WarQl0&callback=initMap"></script>
+</body>
+</html>

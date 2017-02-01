@@ -1,0 +1,61 @@
+.vendor_header{
+    background: url("../images/vendorhands.jpg") no-repeat center;
+    background-size: cover;
+    height: 250px;
+    position: relative;
+    box-shadow: 2px 2px 5px #888888;
+}
+#vendor_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(51,51,51,0.5);
+    height: 250px;
+    width: 100%;
+}
+.vendor_content{
+    padding-top: 100px;
+    height: 250px;
+}
+h3{
+    color: white;
+    font-weight: 600;
+    margin-top: 0;
+    font-size: 28px;
+}
+.vendor_form{
+    width: 420px;
+    height: 40px;
+    border: 1px solid #4ECDC4;
+    border-radius: 5px;
+}
+.vendor_btn{
+	width: 100px;
+	height: 40px;
+}
+.vendor_subtext{
+	color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+.vendor_sort{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	box-shadow: 1px 1px 2px #888888;
+	font-size: 16px;
+}
+.sort{
+	height: 30px;
+}
+.vendor_name{
+	padding-top: 15px;
+	color: #4a0048;
+	font-size: 17px;
+}
+.thumbnail {
+    width: 23%;
+    margin-right: 20px;
+}
+.vendor_sub{
+	font-size: 15px;
+}

@@ -1,0 +1,337 @@
+body, html {
+    margin:0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+/*::-webkit-input-placeholder {*/
+    /*text-align: center;*/
+/*}*/
+
+/*:-moz-placeholder { /!* Firefox 18- *!/*/
+    /*text-align: center;*/
+/*}*/
+
+/*::-moz-placeholder {  /!* Firefox 19+ *!/*/
+    /*text-align: center;*/
+/*}*/
+
+/*:-ms-input-placeholder {*/
+    /*text-align: center;*/
+/*}*/
+.container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar-default{
+    /*position: static;*/
+    background-color: white;
+}
+.topbar.tb{
+    margin-top: 0 !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 5px solid #4ECDC4;
+    z-index: 10000;
+}
+.slide-button{
+    height: 70px;
+    width: 250px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.my_btn{
+    background-color: #4a0048;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+.my_btn:hover{
+    background-color: white;
+    color:#4a0048;
+}
+.btn{
+    background-color: #4ECDC4;
+    color: white;
+}
+.btn:hover{
+    color: #4ECDC4;
+    background-color: white;
+    border: 1px solid #4ECDC4;
+}
+.main-menu li a{
+    padding-bottom: 5px;
+}
+.main-menu li a:hover{
+    border-bottom: 2px solid #4a0048;
+    color: #333333;
+}
+.sl li:last-child a:hover{
+    color: #4ECDC4;
+    font-weight: 700;
+}
+.carousel-caption{
+    position: absolute;
+    bottom: 100px;
+    color: white;
+    z-index: 1000;
+}
+.carousel-caption h1{
+    font-size: 36px;
+    font-weight: bold;
+}
+.carousel-caption div p, .and{
+    font-size: 14px;
+}
+.carousel-caption p, .and{
+    font-size: 18px;
+}
+.overlay{
+    background-color: rgba(51,51,51,0.5);
+    border-radius: 10px;
+}
+.overlay h1{
+    padding-top: 10px;
+}
+.overlay div{
+    padding-bottom: 10px;
+}
+.form-group{
+    margin-left: 45px;
+}
+.core-values h2{
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.core-values ul li p{
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4ECDC4;
+}
+.core_lines{
+    border-bottom: 2px solid grey;
+}
+.core-values, .core-values ul li{
+    margin-left: 20px;
+    margin-right: 35px;
+}
+.couple-alert{
+    background-color: #4ECDC4;
+    height: 50px;
+    position: relative;
+}
+.notice{
+    height: 50px;
+    border-bottom: 1px solid grey;
+    background-color: #e3e3e3;
+    text-align: center;
+    display: none;
+}
+.notice p, .search p{
+    font-size: 16px;
+}
+.alert-text{
+    position: absolute;
+    height: 6%;
+    width: 100%;
+}
+.bounce {
+    -webkit-animation: mover 400ms infinite alternate;
+    animation: mover 400ms infinite alternate;
+}
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+.search{
+    background-image: url("../images/search%20bg.jpg");
+
+}
+.search h2{
+    padding-top: 3%;
+    font-weight: 600;
+}
+.featured{
+    background-color: grey;
+    height: 70%;
+}
+.featured-img{
+    float: left;
+}
+.featured-text{
+    text-align: center;
+    height: 70%;
+    background-color: grey;
+    color: white;
+}
+.featured-text p{
+    padding-top: 3.4%;
+    font-size: 16px;
+    font-style: italic;
+}
+.featured-text h3{
+    font-weight: 600;
+}
+span .flip-clock-label{
+    font-size: 20px;
+}
+.thumbnail div p{
+    color: white;
+    font-weight: 600;
+    background-color: #4ECDC4;
+    line-height: 2;
+    height: 100%;
+    border-bottom: 5px solid #4ECDC4;
+}
+.core-values ul li:hover{
+    background-color: #4ECDC4;
+    border-radius: 5px;
+    outline: 2px white dashed;
+    box-shadow: 0 0 0 2px #69D2E7;
+    animation: 1s animateBorder ease infinite;
+}
+
+@keyframes animateBorder {
+    to {
+        outline-color: deeppink;
+        box-shadow: 0 0 0 2px #E0E4CC;
+    }
+}
+.core-values ul li:hover p{
+    color: white;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+footer {
+    clear: both;
+    margin-top: 1%;
+    background-color:#000000;
+    min-height:350px;
+    font-family: 'Open Sans', sans-serif;
+}
+.footerleft {
+    margin-top:10px;
+    padding:0 36px;
+}
+.logofooter {
+    margin-bottom:10px;
+    font-size:25px;
+    color:#fff;
+    font-weight:700;
+}
+.footerleft p {
+    color:#a0a3a4;
+    font-size:12px !important;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom:15px;
+}
+.footerleft p i {
+    width:20px;
+    color:#999;
+}
+.paddingtop-bottom {
+    margin-top:10px;
+}
+.footer-ul {
+    list-style-type:none;
+    padding-left:0px;
+    margin-left:2px;
+}
+.footer-ul li {
+    line-height:29px;
+    font-size:12px;
+}
+.footer-ul li a {
+    color:#a0a3a4;
+    transition: color 0.2s linear 0s,background 0.2s linear 0s;
+}
+.footer-ul i {
+    margin-right:10px;
+}
+.footer-ul li a:hover {
+    transition: color 0.2s linear 0s, background 0.2s linear 0s;
+    color:#ff670f;
+}
+
+.social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.icon-ul {
+    list-style-type:none !important;
+    margin:0px;
+    padding:0px;
+}
+.icon-ul li {
+    line-height:75px;
+    width:100%;
+    float:left;
+}
+.icon {
+    float:left;
+    margin-right:5px;
+}
+.copyright {
+    min-height:40px;
+    background-color:#4ECDC4;
+}
+.copyright p {
+    text-align:left;
+    color:#FFF;
+    padding:10px 0;
+    margin-bottom:0px;
+}
+.heading7 {
+    font-size:21px;
+    font-weight:700;
+    color:#d9d6d6;
+    margin-bottom:22px;
+}
+.post p {
+    font-size:12px;
+    color:#a0a3a4;
+    line-height:20px;
+}
+.bottom_ul {
+    list-style-type:none;
+    float:right;
+    margin-bottom:0px;
+}
+.bottom_ul li {
+    float:left;
+    line-height:40px;
+}
+.bottom_ul li:after {
+    content:"/";
+    color:#FFF;
+    margin-right:8px;
+    margin-left:8px;
+}
+.bottom_ul li a {
+    color:#FFF;
+    font-size:12px;
+}
+#vendors{
+    border-bottom: 2px solid white;
+    color:#a0a3a4;
+    padding:15px 36px;
+}
